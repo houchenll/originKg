@@ -1,6 +1,14 @@
 # originKg
 知识图谱笔记
 
+## 资源
+
+### github
+* [shaoxiongji - knowledge-graphs][1]  
+
+
+## 目录结构设计
+```
 originKg  
   |___ src  
   |___ note，部分放 notion  
@@ -15,3 +23,6 @@ originKg
         |___ image  
         |___ doc  
   |___ subTech  
+```
+
+[1]: https://github.com/shaoxiongji/knowledge-graphs
