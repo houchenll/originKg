@@ -51,6 +51,8 @@ def create_index():
     try:
         # 如果文件已经存在，则提取 'stars', 'keywords', 'abstract'三个人工维护的字段
         df_already = pd.read_excel(paper_index_path)
+        # 论文标题的唯一性，不能有同名论文
+        df_already = df_already.drop_duplicates(subset=['title'])
         df_already = df_already[['title', 'stars', 'keywords', 'abstract']]
         df_paper = df_paper.merge(df_already, on=['title'])
     except Exception as e:
